@@ -2,7 +2,7 @@
 # Simultaneous Traffic Sign Detection and Classification with RetinaNet
 
 ## Overview
-In this project, I trained a one-stage detection and classification model based on this paper 
+In this project, I implement an one-stage detection and classification model based on this paper 
 [Focal Loss for Dense Object Detection](https://arxiv.org/pdf/1708.02002.pdf), to detect and classify traffic signs. This model was trained on the [Tsinghua_Tecent_100K](http://cg.cs.tsinghua.edu.cn/traffic-sign/) Dataset. After carefully model tuning, the RetinaNet finally achieved 90 MAP on 42 classes traffic signs on the test dataset, which is better than previous benchmarks.
 
 * [Traffic-Sign Detection and Classification in the Wild](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhu_Traffic-Sign_Detection_and_CVPR_2016_paper.pdf)
@@ -55,13 +55,14 @@ All the models were trained on two GTX-1080Ti GPU for 18 epochs with batch size 
 
  As shown below, the RetinaNet-101 and RetinaNet-152 models achieve 92.03 and 92.80 MAP on the Tsinghua_Tecent_100K dataset respectively, which outperform the previous benchmark for simultanous traffic sign detection and classification. See `evaluate/eval_check.ipynb` for more details.
  
- | CVPR-2016 TT100K | RetinaNet-50| RetinaNet-101 |RetinaNet-152|
+ 
+  Models | CVPR-2016 TT100K | RetinaNet-50| RetinaNet-101 |RetinaNet-152
 ---- | ---
 MAP | 0.8979 | 0.7939 | 0.9203 | 0.9280 
 
 
-<img src="data/pr.png" width=600 height=300>
- <figure class="third">
+<img src="data/pr.png" width=600 height=300 align='center'>
+ <figure class="third" align='center'>
     <img src="data/pr1.png" width=350 height=250 align='left'> <img src="data/pr2.png" width=350 height=250>
     <img src="data/pr3.png" width=350 height=250 align='left'> <img src="data/pr4.png" width=350 height=250>
     
