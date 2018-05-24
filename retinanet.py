@@ -6,7 +6,6 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 
 from resnet import *
-from inceptionV3 import *
 torch.backends.cudnn.enabled = False
 
 
@@ -132,8 +131,7 @@ class RetinaNet(nn.Module):
         'resnet34': resnet34,
         'resnet50': resnet50,
         'resnet101': resnet101,
-        'resnet152': resnet152,
-        'inceptionV3':inception_v3
+        'resnet152': resnet152
     }
 
     def __init__(self, backbone='resnet101', num_classes=1, pretrained=True):

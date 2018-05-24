@@ -1,5 +1,5 @@
 import os
-
+import config as cfg
 from preprocessing.bbox import BoundingBox
 from preprocessing.errors import UnsupportedExtensionError, UnsupportedFormatError
 import json
@@ -24,7 +24,7 @@ class AnnotationDir:
                 right = int(sign_dict['bbox']['xmax'])
                 top = int(sign_dict['bbox']['ymin'])
                 bottom = int(sign_dict['bbox']['ymax'])
-                box = BoundingBox(left, top, right, bottom, 512,512,self.labels.index(label))
+                box = BoundingBox(left, top, right, bottom, cfg.width,cfg.height,self.labels.index(label))
                 boxes.append(box)
             if len(boxes) > 0:
                
