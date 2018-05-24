@@ -57,17 +57,15 @@ All the models were trained on two GTX-1080Ti GPU for 18 epochs with batch size 
  
  
   Models | CVPR-2016 TT100K | RetinaNet-50| RetinaNet-101 |RetinaNet-152
----- | ---
+-------- |:----------------:| :-----------: | :-------------: | :------------:
 MAP | 0.8979 | 0.7939 | 0.9203 | 0.9280 
 
 
 <img src="data/pr.png" width=600 height=300 align='center'>
- <figure class="third" align='center'>
-    <img src="data/pr1.png" width=350 height=250 align='left'> <img src="data/pr2.png" width=350 height=250>
-    <img src="data/pr3.png" width=350 height=250 align='left'> <img src="data/pr4.png" width=350 height=250>
-    
-    
- </figure>
+
+<img src="data/pr1.png" width=350 height=250 align='left'> <img src="data/pr2.png" width=350 height=250>
+<img src="data/pr3.png" width=350 height=250 align='left'> <img src="data/pr4.png" width=350 height=250>
+
 
 ## Reference
 * [1.Focal Loss for Dense Object Detection](https://arxiv.org/pdf/1708.02002.pdf)
