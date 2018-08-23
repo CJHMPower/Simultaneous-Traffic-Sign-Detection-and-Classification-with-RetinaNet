@@ -28,14 +28,14 @@ In this project, I implement an one-stage detection and classification model bas
 
 ### To run predictions on pre-trained models
 * Clone this repository
-* Download the pretrained model [here](https://pan.baidu.com/s/1mafO6ldO5Fj95VM-34IeoQ)
+* Download the pretrained model [here](https://drive.google.com/file/d/1SYmN32CYIrIFktcXa-ITKkAcZ_f-Br7u/view?usp=sharing)
 * ```python test.py -m demo```
     * This will run inference on images from /samples, you can also put your own images into this directory to run inference.
 * ```python test.py -m valid```
     * This will run inference on the entire valid dataset and output the evaluation result.You can change the backbone model by -backbone flag. See the code for details.
 
 ### To run a traning experiment from scratch
-* The training and testing dataset I used can be downloaded [here](https://pan.baidu.com/s/1bgJlc6qVanJAtxAKGTerGg)
+* The training and testing dataset I used can be downloaded [here](https://drive.google.com/open?id=1XOD_ML6QlO_t3Yk0rZ7PpQAOB761je0a)
 * Save the training and valid dataset into the /data directory
 * ```python train.py -exp model```
     * This will train the RetinaNet model from scratch. You can change the parameters easily in the config.py file and use similar ways to train your own dataset. The flag model specify the directory to save your model. See the code for more details.
