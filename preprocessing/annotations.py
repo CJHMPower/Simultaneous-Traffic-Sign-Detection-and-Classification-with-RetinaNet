@@ -19,6 +19,8 @@ class AnnotationDir:
             boxes = []
             for sign_dict in annos['imgs'][id]['objects']:
                 label = sign_dict['category']
+                if label in ['po', 'io', 'wo']:
+                    continue
                 
                 left = int(sign_dict['bbox']['xmin'])
                 right = int(sign_dict['bbox']['xmax'])
