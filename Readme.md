@@ -36,7 +36,7 @@ In this project, I implement an one-stage detection and classification model bas
     * This will run inference on the entire valid dataset and output the evaluation result.You can change the backbone model by -backbone flag. See the code for details.
 
 ### To run a traning experiment from scratch
-* The training and testing dataset I used can be downloaded [here](https://drive.google.com/file/d/1XOD_ML6QlO_t3Yk0rZ7PpQAOB761je0a/view?usp=sharing)
+* The training and testing dataset I used can be downloaded [here](https://drive.google.com/file/d/1hEOdhltjy7_WOEMP07rzH3PwZIAkfvEo/view?usp=sharing)
 * Save the training and valid dataset into the /data directory
 * ```python train.py -exp model```
     * This will train the RetinaNet model from scratch. You can change the parameters easily in the config.py file and use similar ways to train your own dataset. The flag model specify the directory to save your model. See the code for more details.
